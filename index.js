@@ -8,3 +8,8 @@ app.use(express.static('public'));
 http.listen(port, function(){
   console.log('starting on port ' + port);
 });
+
+app.post("/uploadPhoto", function(req, res){
+	console.log(req.files);
+	res.send(req.files);
+});
