@@ -10,6 +10,6 @@ http.listen(port, function(){
 });
 
 app.post("/uploadPhoto", function(req, res){
-	console.log(req.files);
+	console.log(req);
 	res.send(req.files);
 });
